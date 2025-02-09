@@ -85,7 +85,7 @@
 
     allPokemon.results.map((val) => {
         
-        fetch(val.url)
+        fetch(val.url) // requisição ao site
         .then(response => response.json())
         .then(pokemonSingle => {
             pokemons.push({nome:val.name, imagem:pokemonSingle.sprites.front_default});
