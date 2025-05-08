@@ -77,7 +77,7 @@
     // qnt = prompt ('Quantos pokemoons vc quer puxar?'); 
     let quantidade = 100;
     function pegaPokemons(){
-    
+    //inicio da funcao
         fetch('https://pokeapi.co/api/v2/pokemon?limit='+ quantidade)
     .then(response => response.json())
     .then(allPokemon => {
